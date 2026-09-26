@@ -12,87 +12,82 @@
     padding: 0;
 }
 
-.box_header {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--color-azul);
-    color: var(--color-blanco);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.picture-header {
-    width: 70%;
-}
-
-.img-header {
-    width: 100%;
-}
-
-.div-header {
-    padding: 20px;
-    min-width: 350px;
-    max-width: 770px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.sub-header {
-    font-size: 35px;
-}
-
-.content-header {
-    font-size: 17px;
-}
-
-.content-svg-span {
-    display: flex;
-    align-items: center;
-}
-
-.svg {
-    width: 25px;
-    margin: 5px;
-}
-
-.negrita {
-    font-weight: bolder;
-    font-size: 1.380rem;
-}
-
-.bg-body-tertiary {
-    background-color: var(--color-negro) !important;
-}
-
-.navbar {
-    position: sticky !important;
+.carousel-inner::after {
+    content: "";
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Aquí aplicamos tu degradado corregido con las comas */
+    background-image: linear-gradient(#00000000, #000000);
+
+    /* Evita que esta capa interfiera si el usuario hace clic o hover en la imagen */
+    pointer-events: none;
 }
 
-.container-fluid {
-    display: flex !important;
-    align-items: center;
-    justify-content: center !important;
-    gap: 50px !important;
-}
-
-.navbar-brand {
-    font-weight: bolder;
-    color: var(--color-azul) !important;
-}
-
-.navbar-brand>img {
+.img-csrousel-header {
+    height: 100vh;
     object-fit: cover;
     object-position: center;
-
+    background-image: linear-gradient(#00000000 #000);
 }
 
-.nav-link {
-    color: var(--color-azul) !important;
+.logo-header {
+    margin: 50px;
+    filter: drop-shadow(0 0 60px #000);
+}
+
+.carousel-caption>h5 {
+    font-size: 70px;
+    position: relative;
+    padding: 15px;
+    z-index: 1;
+}
+
+.carousel-caption>p {
+    font-size: 40px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar{
+    background-color: var(--color-azul);
+}
+
+.navbar-toggler{
+    border-color: var(--color-blanco) !;
+}
+
+.navbar-toggler-icon{
+    color: var(--color-blanco) !important;
+}
+
+.navbar-toggler{
+    border-color: var(--color-blanco) !important;
+    color: var(--color-blanco) !important;
+}
+
+.container-fluid{
+    display: flex !important;
+    gap: 30px;
+    padding-left: 40px !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fluid a{
+    color: var(--color-blanco) !important;
+}
+
+.container-fluid a:hover{
+    outline: 2px solid var(--color-blanco);
+}
+
+.logo-head{
+    border: none !important;
+    outline: none !important;
 }
 
 .footer {
@@ -127,7 +122,7 @@
     color: #ccc;
 }
 
-.footer-column ul {
+.footer-column>ul {
     list-style: none;
 }
 
@@ -155,43 +150,41 @@
     color: #aaa;
 }
 
-
-@media screen and (max-width:800px) {
-    .div-header {
-        font-size: 1.0375rem;
+@media screen and (max-width:750px) {
+    .carousel-caption>h5 {
+        font-size: 30px;
+        position: relative;
+        padding: 8px;
+        z-index: 1;
+        display: initial !important;
     }
 
-    .sub-header {
-        font-size: 28px;
-    }
-
-    .content-header {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .div-header {
-        font-size: 17px;
-        margin: 10px;
-    }
-
-    .sub-header {
-        font-size: 24px;
-    }
-
-    .content-header {
-        font-size: 14px;
-    }
-
-    .img-header {
-        height: 365px;
-        object-fit: cover;
-        object-position: center;
+    .carousel-caption>p {
+        font-size: 15px;
+        padding: 5px;
+        position: relative;
+        z-index: 1;
+        display: initial !important;
     }
 
     .footer-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-column>ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    .logo-header {
+        margin: 10px;
+    }
+
+    .img-csrousel-header {
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
     }
 }

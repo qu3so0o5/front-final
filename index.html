@@ -15,185 +15,91 @@
 </head>
 
 <body>
-    <header class="box_header">
-        <picture class="picture-header">
-            <source class="img-cell-header" srcset="img/LOGO_cel.png" media="(max-width:500px)">
-            <img class="img-header" src="/img/SENATI_logo_blanco.png" alt="logo senati">
-        </picture>
-        <div class="div-header">
-            <h3 class="sub-header">
-                Ingeniería de software con "Inteligencia Artificial"
-            </h3>
-            <div class="content-header">
-                <div class="content-svg-span">
-                    <img class="svg svg-reloj" src="/img/svg/reloj.svg" alt="reloj">
-                    <span class="negrita">Duracion:</span>
-                </div>
-                6 semestres (3 años)<br>
-                Profesional TécnicoFormación de 3 años enfocada en el desarrollo de software.
+    <header class="header" id="head11">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-            <div class="content-header">
-                <div class="content-svg-span">
-                    <img class="svg svg-titulo" src="img/svg/titulo.svg" alt="titulo">
-                    <span class="negrita">Titulación:</span>
+            <div class="carousel-inner">
+                <picture>
+                    <source class="logo-header" srcset="/img/LOGO_cel.png" media="(max-width:750px)"
+                        style="width: 20%; position: absolute; left: 0; top: 0; z-index: 10;">
+                    <img class="logo-header" src="/img/SENATI_logo_blanco.png" alt="logo senati"
+                        style="width: 30%; position: absolute; left: 0; top: 0; z-index: 10;">
+                </picture>
+                <div class="carousel-item active">
+                    <img src="/img/chica_pc_1800x1190.png" class="d-block w-100 img-csrousel-header" alt="chica pc">
+                    <div class="carousel-caption">
+                        <h5>Ingenieria de Software</h5>
+                        <br>
+                        <p>con Inteligencia Artificial</p>
+                    </div>
                 </div>
-                Titulación Profesional<br>
-                Técnico en Ingeniería de Software con Inteligencia Artificial
-            </div>
-            <div class="content-header">
-                <div class="content-svg-span">
-                    <img class="svg svg-tuerca" src="img/svg/tuerca.svg" alt="tuerca">
-                    <span class="negrita">Modalidad:</span>
+                <div class="carousel-item">
+                    <img src="/img/chicos_pc1800x1190.jpg" class="d-block w-100 img-csrousel-header" alt="chicos pc">
+                    <div class="carousel-caption">
+                        <h5>Termina tu carrera en 3 años.</h5>
+                        <br>
+                        <p>6 semestres(3 años) - Profesional Técnico</p>
+                    </div>
                 </div>
-                Aprendizaje dual<br>
-                La formación combina el aprendizaje en el instituto con experiencias prácticas en una empresa.
+                <div class="carousel-item">
+                    <img src="/img/tony_senati_1800x1190.jpg" class="d-block w-100 img-csrousel-header" alt="tony pc">
+                    <div class="carousel-caption">
+                        <h5>Aprendizaje dua.l</h5>
+                        <br>
+                        <p>Posibilidad de aprender en una empresa y el instituto.</p>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </header>
-    <!--Empezamos con el nav bar XD -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo-azul.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                SENATI
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#head11">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" style="border-color:  white;">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Nosotros</a>
-                    <a class="nav-link" >Inscribete</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#m11">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inscribete</a>
+                    </li>
+                </ul>
+                <span class="navbar-text d-none d-md-block">
+                    <a class="navbar-brand logo-head" href="#head11">
+                        <img src="/img/SENATI_logo_blanco.png" alt="Bootstrap" width="150">
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
-    <div class="box-main">
-        <aside>
-            <img src="/img/chicos_pc1800x1190.jpg" alt="jovenes en una pc">
-            <p>
-                
-            </p>
+    <main class="main" id="m11">
+        <aside class="aside">
+
         </aside>
-        <main>
+        <div class="box">
 
-        </main>
-    </div>
-    <main class="box-main" style="background-color: coral; display: flex;gap: 50px; flex-direction: column;">
-        <div style="border:2px solid;padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-            cupiditate ad delectus ipsam aperiam? Consequatur eaque ratione veniam nemo, provident ipsa asperiores. Sunt
-            repellat magni cumque sit obcaecati in perspiciatis! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Rem laboriosam nihil enim magnam earum quasi dolor placeat incidunt architecto dolore eaque repellat,
-            eligendi maxime aperiam iste iure distinctio ipsam veritatis! Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Ullam, eum alias blanditiis, excepturi amet eveniet voluptatibus neque nesciunt
-            repellendus eius veniam. Corrupti odit voluptate sit necessitatibus optio aperiam asperiores dicta. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Autem hic sed odio similique ducimus unde illum nostrum,
-            ratione dolorum exercitationem optio qui officia, molestiae sunt! Illum harum perferendis eius mollitia!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae pariatur repellat voluptatem autem
-            sed exercitationem eaque accusantium quasi maxime natus ad omnis corporis sapiente fuga soluta aut rerum?
-            Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sequi explicabo praesentium
-            voluptatem, quas enim libero odit unde magnam nemo perspiciatis accusamus optio laboriosam eaque obcaecati
-            voluptas vero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta explicabo voluptate,
-            recusandae non, ea accusamus id quam corrupti, quidem amet officiis praesentium quisquam eaque culpa. Maxime
-            necessitatibus unde quo labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis est
-            doloremque sed eum nisi odio cupiditate impedit ducimus architecto modi eius beatae vitae, sunt at, nihil
-            rem laudantium facilis omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, earum nulla.
-            Culpa est, qui rem alias aperiam totam placeat tempora libero quibusdam fugiat consectetur exercitationem
-            aut? Voluptatibus adipisci velit veniam? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Doloremque officia debitis facere vero ipsa excepturi, est non et, libero dolores magni doloribus! Sunt odit
-            fugiat corporis similique tempore cupiditate quia.</div>
-        <div style="border:2px solid; margin: 50px;padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Voluptas cupiditate ad delectus ipsam aperiam? Consequatur eaque ratione veniam nemo, provident ipsa
-            asperiores. Sunt repellat magni cumque sit obcaecati in perspiciatis! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem laboriosam nihil enim magnam earum quasi dolor placeat incidunt architecto dolore
-            eaque repellat, eligendi maxime aperiam iste iure distinctio ipsam veritatis! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ullam, eum alias blanditiis, excepturi amet eveniet voluptatibus neque
-            nesciunt repellendus eius veniam. Corrupti odit voluptate sit necessitatibus optio aperiam asperiores dicta.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic sed odio similique ducimus unde illum
-            nostrum, ratione dolorum exercitationem optio qui officia, molestiae sunt! Illum harum perferendis eius
-            mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae pariatur repellat
-            voluptatem autem sed exercitationem eaque accusantium quasi maxime natus ad omnis corporis sapiente fuga
-            soluta aut rerum? Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sequi
-            explicabo praesentium voluptatem, quas enim libero odit unde magnam nemo perspiciatis accusamus optio
-            laboriosam eaque obcaecati voluptas vero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Soluta explicabo voluptate, recusandae non, ea accusamus id quam corrupti, quidem amet officiis praesentium
-            quisquam eaque culpa. Maxime necessitatibus unde quo labore. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Perspiciatis est doloremque sed eum nisi odio cupiditate impedit ducimus architecto modi
-            eius beatae vitae, sunt at, nihil rem laudantium facilis omnis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod, earum nulla. Culpa est, qui rem alias aperiam totam placeat tempora libero quibusdam
-            fugiat consectetur exercitationem aut? Voluptatibus adipisci velit veniam? Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Doloremque officia debitis facere vero ipsa excepturi, est non et, libero
-            dolores magni doloribus! Sunt odit fugiat corporis similique tempore cupiditate quia.</div>
-        <div style="border:2px solid; margin: 50px;padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Voluptas cupiditate ad delectus ipsam aperiam? Consequatur eaque ratione veniam nemo, provident ipsa
-            asperiores. Sunt repellat magni cumque sit obcaecati in perspiciatis! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem laboriosam nihil enim magnam earum quasi dolor placeat incidunt architecto dolore
-            eaque repellat, eligendi maxime aperiam iste iure distinctio ipsam veritatis! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ullam, eum alias blanditiis, excepturi amet eveniet voluptatibus neque
-            nesciunt repellendus eius veniam. Corrupti odit voluptate sit necessitatibus optio aperiam asperiores dicta.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic sed odio similique ducimus unde illum
-            nostrum, ratione dolorum exercitationem optio qui officia, molestiae sunt! Illum harum perferendis eius
-            mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae pariatur repellat
-            voluptatem autem sed exercitationem eaque accusantium quasi maxime natus ad omnis corporis sapiente fuga
-            soluta aut rerum? Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sequi
-            explicabo praesentium voluptatem, quas enim libero odit unde magnam nemo perspiciatis accusamus optio
-            laboriosam eaque obcaecati voluptas vero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Soluta explicabo voluptate, recusandae non, ea accusamus id quam corrupti, quidem amet officiis praesentium
-            quisquam eaque culpa. Maxime necessitatibus unde quo labore. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Perspiciatis est doloremque sed eum nisi odio cupiditate impedit ducimus architecto modi
-            eius beatae vitae, sunt at, nihil rem laudantium facilis omnis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod, earum nulla. Culpa est, qui rem alias aperiam totam placeat tempora libero quibusdam
-            fugiat consectetur exercitationem aut? Voluptatibus adipisci velit veniam? Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Doloremque officia debitis facere vero ipsa excepturi, est non et, libero
-            dolores magni doloribus! Sunt odit fugiat corporis similique tempore cupiditate quia.</div>
-        <div style="border:2px solid; margin: 50px;padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Voluptas cupiditate ad delectus ipsam aperiam? Consequatur eaque ratione veniam nemo, provident ipsa
-            asperiores. Sunt repellat magni cumque sit obcaecati in perspiciatis! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem laboriosam nihil enim magnam earum quasi dolor placeat incidunt architecto dolore
-            eaque repellat, eligendi maxime aperiam iste iure distinctio ipsam veritatis! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ullam, eum alias blanditiis, excepturi amet eveniet voluptatibus neque
-            nesciunt repellendus eius veniam. Corrupti odit voluptate sit necessitatibus optio aperiam asperiores dicta.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic sed odio similique ducimus unde illum
-            nostrum, ratione dolorum exercitationem optio qui officia, molestiae sunt! Illum harum perferendis eius
-            mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae pariatur repellat
-            voluptatem autem sed exercitationem eaque accusantium quasi maxime natus ad omnis corporis sapiente fuga
-            soluta aut rerum? Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sequi
-            explicabo praesentium voluptatem, quas enim libero odit unde magnam nemo perspiciatis accusamus optio
-            laboriosam eaque obcaecati voluptas vero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Soluta explicabo voluptate, recusandae non, ea accusamus id quam corrupti, quidem amet officiis praesentium
-            quisquam eaque culpa. Maxime necessitatibus unde quo labore. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Perspiciatis est doloremque sed eum nisi odio cupiditate impedit ducimus architecto modi
-            eius beatae vitae, sunt at, nihil rem laudantium facilis omnis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod, earum nulla. Culpa est, qui rem alias aperiam totam placeat tempora libero quibusdam
-            fugiat consectetur exercitationem aut? Voluptatibus adipisci velit veniam? Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Doloremque officia debitis facere vero ipsa excepturi, est non et, libero
-            dolores magni doloribus! Sunt odit fugiat corporis similique tempore cupiditate quia.</div>
-        <div style="border:2px solid; margin: 50px;padding: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Voluptas cupiditate ad delectus ipsam aperiam? Consequatur eaque ratione veniam nemo, provident ipsa
-            asperiores. Sunt repellat magni cumque sit obcaecati in perspiciatis! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Rem laboriosam nihil enim magnam earum quasi dolor placeat incidunt architecto dolore
-            eaque repellat, eligendi maxime aperiam iste iure distinctio ipsam veritatis! Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ullam, eum alias blanditiis, excepturi amet eveniet voluptatibus neque
-            nesciunt repellendus eius veniam. Corrupti odit voluptate sit necessitatibus optio aperiam asperiores dicta.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic sed odio similique ducimus unde illum
-            nostrum, ratione dolorum exercitationem optio qui officia, molestiae sunt! Illum harum perferendis eius
-            mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quae pariatur repellat
-            voluptatem autem sed exercitationem eaque accusantium quasi maxime natus ad omnis corporis sapiente fuga
-            soluta aut rerum? Culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ullam sequi
-            explicabo praesentium voluptatem, quas enim libero odit unde magnam nemo perspiciatis accusamus optio
-            laboriosam eaque obcaecati voluptas vero quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Soluta explicabo voluptate, recusandae non, ea accusamus id quam corrupti, quidem amet officiis praesentium
-            quisquam eaque culpa. Maxime necessitatibus unde quo labore. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Perspiciatis est doloremque sed eum nisi odio cupiditate impedit ducimus architecto modi
-            eius beatae vitae, sunt at, nihil rem laudantium facilis omnis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quod, earum nulla. Culpa est, qui rem alias aperiam totam placeat tempora libero quibusdam
-            fugiat consectetur exercitationem aut? Voluptatibus adipisci velit veniam? Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Doloremque officia debitis facere vero ipsa excepturi, est non et, libero
-            dolores magni doloribus! Sunt odit fugiat corporis similique tempore cupiditate quia.</div>
-
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-container">
