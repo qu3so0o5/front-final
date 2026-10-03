@@ -71,6 +71,13 @@
     </header>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
+
+            <div class="switch-button">
+                <input type="checkbox" name="switch-button" id="switch-label" aria-label="Interruptor"
+                    class="switch-button__checkbox" style="position: relative;z-index: 1;"">
+                <label for="switch-label" class="switch-button__label"></label>
+            </div>
+
             <a class="navbar-brand" href="#head11">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
@@ -280,6 +287,33 @@
             </div>
         </div>
     </main>
+    <h2 class="titulo-aside" style="text-align: center;"> Contamos con:</h2>
+    <div class="box-cards">
+        <div class="card" style="width: 18rem;">
+            <img src="img/laboratorio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Laboratorios modernos</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/planadocente.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Plana docente altamente capacitada</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/dobletitulacion.jpg" class="card-img-top d-titu-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Accede a la doble titulacon de senati</p>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/img/ingles.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Ingles tecnico completo</p>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
@@ -317,6 +351,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
