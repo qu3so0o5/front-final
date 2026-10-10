@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario inscripcion</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Inscripción Académica | SENATI</title>
+
+        <!-- Bootstrap 5 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fuente -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/formstyle.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    style="border-color:  white;">
+                    <svg xmlns="http://w3.org" width="25" height="25" viewBox="0 0 16 16"
+                        style="display: block !important; fill: #ffffff !important; background-color: transparent !important;">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#m11">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./form.html">Inscribete</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text d-none d-md-block">
+
+                        <a class="navbar-brand logo-head" href="#head11">
+                            <img src="/img/SENATI_logo_blanco.png" alt="Bootstrap" width="150">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <main class="contenedor">
+
+            <header class="encabezado">
+                <div class="linea-roja"></div>
+
+                <h1>Formulario de inscripción</h1>
+
+                <p>
+                    Completa tus datos personales y académicos para iniciar
+                    tu proceso de inscripción.
+                </p>
+            </header>
+
+            <div class="tarjeta">
+
+                <div class="tarjeta-superior"></div>
+
+                <form id="formulario" class="needs-validation" novalidate>
+
+                    <div class="contenido-formulario">
+
+                        <section>
+
+                            <div class="seccion">
+                                <div class="numero">01</div>
+
+                                <div>
+                                    <h2>Datos personales</h2>
+                                    <p>Información de identificación y contacto.</p>
+                                </div>
+                            </div>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="nombres" class="form-label">
+                                        Nombres
+                                    </label>
+
+                                    <input type="text" class="form-control" id="nombres" name="nombres"
+                                        placeholder="Ingresa tus nombres" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa tus nombres.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="apellidos" class="form-label">
+                                        Apellidos
+                                    </label>
+
+                                    <input type="text" class="form-control" id="apellidos" name="apellidos"
+                                        placeholder="Ingresa tus apellidos" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa tus apellidos.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="dni" class="form-label">
+                                        DNI
+                                    </label>
+
+                                    <input type="text" class="form-control" id="dni" name="dni" placeholder="8 dígitos"
+                                        maxlength="8" pattern="[0-9]{8}" inputmode="numeric" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa un DNI válido de 8 dígitos.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fecha" class="form-label">
+                                        Fecha de nacimiento
+                                    </label>
+
+                                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona tu fecha de nacimiento.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="correo" class="form-label">
+                                        Correo electrónico
+                                    </label>
+
+                                    <input type="email" class="form-control" id="correo" name="correo"
+                                        placeholder="ejemplo@correo.com" required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa un correo válido.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="celular" class="form-label">
+                                        Número de celular
+                                    </label>
+
+                                    <input type="tel" class="form-control" id="celular" name="celular"
+                                        placeholder="999 999 999" maxlength="9" pattern="[0-9]{9}" inputmode="numeric"
+                                        required>
+
+                                    <div class="invalid-feedback">
+                                        Ingresa un celular de 9 dígitos.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <hr class="separador">
+
+                        <section>
+
+                            <div class="seccion">
+                                <div class="numero">02</div>
+
+                                <div>
+                                    <h2>Información académica</h2>
+                                    <p>Selecciona tus preferencias de estudio.</p>
+                                </div>
+                            </div>
+
+                            <div class="row g-3">
+
+                                <div class="col-12">
+                                    <label for="carrera" class="form-label">
+                                        Carrera profesional
+                                    </label>
+
+                                    <select class="form-select" id="carrera" name="carrera" required>
+                                        <option value="" selected disabled>
+                                            Selecciona una carrera
+                                        </option>
+
+                                        <option>
+                                            Ingeniería de Software con Inteligencia Artificial
+                                        </option>
+
+                                        <option>
+                                            Desarrollo de Software
+                                        </option>
+
+                                        <option>
+                                            Administración Industrial
+                                        </option>
+
+                                        <option>
+                                            Diseño y Desarrollo Web
+                                        </option>
+
+                                        <option>
+                                            Otra carrera
+                                        </option>
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona una carrera.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="sede" class="form-label">
+                                        Sede
+                                    </label>
+
+                                    <select class="form-select" id="sede" name="sede" required>
+                                        <option value="" selected disabled>
+                                            Selecciona una sede
+                                        </option>
+
+                                        <option>Cusco</option>
+                                        <option>Lima</option>
+                                        <option>Arequipa</option>
+                                        <option>Trujillo</option>
+                                        <option>Otra sede</option>
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona una sede.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="modalidad" class="form-label">
+                                        Modalidad de estudio
+                                    </label>
+
+                                    <select class="form-select" id="modalidad" name="modalidad" required>
+                                        <option value="" selected disabled>
+                                            Selecciona una modalidad
+                                        </option>
+
+                                        <option>Presencial</option>
+                                        <option>Virtual</option>
+                                        <option>Semipresencial</option>
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona una modalidad.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="nivel" class="form-label">
+                                        Nivel educativo
+                                    </label>
+
+                                    <select class="form-select" id="nivel" name="nivel" required>
+                                        <option value="" selected disabled>
+                                            Selecciona tu nivel
+                                        </option>
+
+                                        <option>Secundaria completa</option>
+                                        <option>Secundaria en curso</option>
+                                        <option>Estudios superiores</option>
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona tu nivel educativo.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="turno" class="form-label">
+                                        Turno preferido
+                                    </label>
+
+                                    <select class="form-select" id="turno" name="turno" required>
+                                        <option value="" selected disabled>
+                                            Selecciona un turno
+                                        </option>
+
+                                        <option>Mañana</option>
+                                        <option>Tarde</option>
+                                        <option>Noche</option>
+                                    </select>
+
+                                    <div class="invalid-feedback">
+                                        Selecciona un turno.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <hr class="separador">
+
+                        <div class="aviso">
+                            <strong>Importante:</strong> revisa tus datos antes
+                            de continuar. Este formulario es una demostración
+                            académica y no corresponde al portal oficial.
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="acepto" required>
+
+                            <label class="form-check-label" for="acepto">
+                                Declaro que la información ingresada es correcta
+                                y acepto el uso de mis datos para esta demostración.
+                            </label>
+
+                            <div class="invalid-feedback">
+                                Debes marcar esta casilla para continuar.
+                            </div>
+                        </div>
+
+                        <div class="acciones d-flex justify-content-between gap-3">
+
+                            <button type="reset" class="btn btn-secundario">
+                                Limpiar formulario
+                            </button>
+
+                            <button type="submit" class="btn btn-principal">
+                                Continuar inscripción&nbsp; →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>SENATI</h3>
+                    <p>Servicio Nacional de Adiestramiento en Trabajo Industrial<br><br>
+                        SENATI lleva 65 años brindando la mejor educación para las ocupaciones profesionales de la
+                        actividad
+                        industrial manufacturera y de las labores de instalación, reparación y mantenimiento.
+                        <br><br>
+                        Sede Central: Av. Alfredo Mendiola # 3520 Independencia, Lima.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="./form.html">Inscribete</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SENATI. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+            </script>
+        <script>
+            const formulario = document.getElementById('formulario');
+
+            formulario.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                formulario.classList.add('was-validated');
+
+                if (formulario.checkValidity()) {
+                    alert('¡Validación correcta! El formulario está listo.');
+                }
+            });
+
+            formulario.addEventListener('reset', function () {
+                formulario.classList.remove('was-validated');
+            });
+
+            const fecha = document.getElementById('fecha');
+
+            const hoy = new Date();
+            const anio = hoy.getFullYear();
+            const mes = String(hoy.getMonth() + 1).padStart(2, '0');
+            const dia = String(hoy.getDate()).padStart(2, '0');
+
+            fecha.max = `${anio}-${mes}-${dia}`;
+        </script>
+    </body>
+
+    </html>
