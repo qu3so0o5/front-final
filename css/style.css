@@ -1,6 +1,9 @@
 /*configuracion inicial*/
+
 :root {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     /*variables para los colores XDDDDD*/
     --color-azul: #0A39E4;
     --color-celes: #75EBFF;
@@ -16,11 +19,54 @@
     --card-body-c: #444;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
+.myDialogDiv {
+    box-sizing: content-box;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #000b;
+    position: fixed;
+    z-index: 11;
+    display: initial;
+}
+
+.none {
+    display: none;
+}
+
+.bonito {
+    max-width: 40%;
+    height: 40%;
+    background-color: white;
+    border-color: #000;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.bonito>h3 {
+    text-align: center;
+}
+
+#botonChipi{
+    background-color: #0000 ;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 50px;
+    font-size: 40px;
+}
 /*Header con carucel*/
 
 .carousel-inner::after {
@@ -350,6 +396,50 @@
     background: #0A39E4;
 }
 
+
+.btn-like {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f0f2f5;
+  border: 1px solid #ccd0d5;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4b4f56;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.btn-like:hover {
+  background-color: #e4e6eb;
+}
+
+/* Estilo del corazón */
+.btn-like .corazon {
+  color: #8c939e;
+  font-size: 18px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Estado activo o seleccionado (puedes activarlo con una clase .liked desde JavaScript) */
+.btn-like.liked {
+  background-color: #ffebee;
+  border-color: #ff8a80;
+  color: #e91e63;
+}
+
+.btn-like.liked .corazon {
+  color: #e91e63;
+  transform: scale(1.2);
+}
+
+.btn-like:active {
+  transform: scale(0.95);
+}
+
 @media screen and (max-width:750px) {
     .carousel-caption>h5 {
         font-size: 30px;
@@ -447,5 +537,13 @@
         height: 70vh;
         object-fit: cover;
         object-position: center;
+    }
+    .bonito{
+        min-width: 80%;
+        height: 60%;
+    }
+    #botonChipi{
+        margin: 10px;
+        font-size: 20px;
     }
 }

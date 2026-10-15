@@ -11,10 +11,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/icon.ico" type="image/vnd.microsoft.icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Senati - ing Software</title>
 </head>
 
 <body>
+    <div class="myDialogDiv">
+        <div class="bonito">
+            <button id="botonChipi">[X]</button>
+            <h3 id="titular"></h3>
+            <p>"Que hoy encuentres motivos para sonreír en los pequeños detalles, que la inspiración te acompañe en cada
+                cosa que hagas y que recuerdes que cada pequeño paso que das te acerca más a tus metas. ¡Eres capaz de
+                lograr cosas increíbles! 🌟✨"</p>
+            <button class="btn-like">
+                <span class="corazon">♥</span>
+                <span class="texto">Like</span>
+            </button>
+                <span id="contador_dialog_like">0</span>
+
+        </div>
+    </div>
     <header class="header" id="head11">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -88,6 +106,9 @@
                         <a class="nav-link" href="#m11">Sobre nosotros</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#m11">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./form.html">Inscribete</a>
                     </li>
                 </ul>
@@ -95,7 +116,7 @@
                 <div class="switch-button" style="display: flex;flex-direction: row;padding: 10px;gap: 20px;">
                     <input type="checkbox" name="switch-button" id="switch-label" aria-label="Interruptor"
                         class="switch-button__checkbox" style="position: relative;z-index: 1;">
-                <label for="switch-label" class="switch-button__label"></label>
+                    <label for="switch-label" class="switch-button__label"></label>
                     <span style="color: #fff; text-align: center;">/ Modo oscuro</span>
                 </div>
                 <span class="navbar-text d-none d-md-block">
@@ -298,6 +319,12 @@
             </div>
         </div>
         <div class="card cards_img" style="width: 18rem;">
+            <img src="img/laboratorio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Laboratorios modernos</p>
+            </div>
+        </div>
+        <div class="card cards_img" style="width: 18rem;">
             <img src="/img/planadocente.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Plana docente altamente capacitada</p>
@@ -360,6 +387,7 @@
     <script src="js/script.js"></script>
     <script src="js/contador.js"></script>
     <script src="./js/zoom_img.js"></script>
+    <script src="./js/dialog_init.js"></script>
 </body>
 
 </html>
